@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleContainer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: center;
+    border: 1px solid none;
+}
+
+.titleContainer .title{
+    font-size: 30px;
+    width: 34%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.accordionContainer{
+   width: 100%;
+   height: auto;
+   display: block;
+   border: 1px solid black;
+   text-align: center;
+}
+
+.projectContainer .titleProjects{
+    width: 100%;
+    height: 90px;
+    color: orange;
+    margin-top: 23px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+.accordionContainer .firstModal{
+    width: 100%;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.accordition-header{
+    width: 80%;
+    margin: 14px auto;
+}
+
+.accorditionBody{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accorditionBody p{
+    width: 50%;
+    height: auto;
+}
+
+.accorditionBody .titleAndImgSection{
+    width: 50%;
+    position: relative;
+    height: 450px;
+}
+
+.accorditionBody .textSection{
+    width: 50%;
+    position: relative;
+    height: 450px;
+}
+
+.titleAndImgSection :nth-child(1) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: orange;
+    font-weight: 750;
+}
+
+.titleAndImgSection :nth-child(2) {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #FFC158;
+    position: absolute;
+    top: 120px;
+}
+
+.textSection  p{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 18px;
+   position: absolute;
+   top: 45px;
+   height: 450px;
+   font-weight: 500;
+   width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+    .accorditionBody{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        margin: 0;
+    padding: 0;
+    }
+    .accordionContainer .titleAndImgSection{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+  .titleAndImgSection :nth-child(1) {
+    width: 100%;
+    height: auto;
+     margin: 0;
+     padding: 0;
+     font-size: 19px;
+     font-weight: 600;
+     position: absolute;
+     left: 120px;
+  }    
+
+  .titleAndImgSection :nth-child(2) {
+    position: absolute;
+    left: 65px;
+    width: 250px;
+    height: 250px;
+    top: 63px;
+  }
+
+  .accorditionBody .textSection {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border: 1px solid none;
+    top: -90px;
+  }
+
+  .accorditionBody.textSection p{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    font-size: 16px;
+    position: absolute;
+    left: 0px;
+    top: 23px;
+    margin: 0;
+    padding: 0;
+  }
+}

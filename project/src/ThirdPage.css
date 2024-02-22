@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titleBlock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    border: 1px solid none;
+}
+
+.title{
+    width: 35%;
+    height: 100px;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cardsContainer{
+    width: 76%;
+    height: auto;
+    display: grid;
+    margin: 90px auto;
+    gap: 23px;
+    grid-template-columns: 3fr 3fr 3fr;
+    border: 1px solid none;
+    row-gap: 45px;
+}
+
+.card{
+    border-radius: 13px;
+    width: 370px;
+    height: 400px;
+    position: relative;
+    box-shadow: 2px 1px 0px 0px rgba(0,0,0,0.43);
+    -webkit-box-shadow: 2px 1px 0px 0px rgba(0,0,0,0.43);
+    -moz-box-shadow: 2px 1px 0px 0px rgba(0,0,0,0.43);
+    border: 1px solid none;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-left: 70px;
+}
+
+.card p{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 750;
+    text-align: center;
+    margin-left: 0px;
+    color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+    .titleBlock{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: 1px solid none;
+    }
+
+    .titleBlock .title{
+        font-size: 23px;
+        text-align: center;
+        width: 70%;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cardsContainer{
+        width: 100%;
+        height: auto;
+       display: inline-block;
+        margin: 0;
+        padding: 0px;
+    }
+
+    .cardsContainer .card{
+        width: 85%;
+        height: 400px;
+        border: 1px solid none;
+        margin: 20px auto;
+         padding: 0;
+         box-sizing: border-box;
+         position: relative;
+         left: 0px;
+         top: 0px;
+    }
+
+    .cardsContainer .card img{
+        width: 200px;
+        height: 200px;
+          margin-left: 65px;
+    }
+
+    .cardsContainer .card p{
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        text-align: center;
+         margin-top: 90px;
+    }
+}
